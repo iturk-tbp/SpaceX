@@ -104,6 +104,9 @@ function draw(){
         text("Press R to start again!",1000,600,500,200);
         if(keyDown("R")){
             gameState = 0;
+            g = 0;
+            r = 0;
+            b = 0;
         }
     }
     if(gameState === 3){
@@ -111,9 +114,12 @@ function draw(){
         textSize(30);
         fill("white")
         text("You have succesfully reached Grteromitch!",25,50,1000,200)
-        text("Press Space to play again!",1000,600,500,200);
-        if(keyDown("space")){
+        text("Press K to play again!",1000,600,500,200);
+        if(keyDown("K")){
             gameState = 0;
+            r = 0;
+            b = 0;
+            g = 0;
         }
         Green.destroyEach();
         Red.destroyEach();
